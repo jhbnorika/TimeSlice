@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 目标 -->
+    <color name="redn1">#ffE60012</color>
+    <color name="grayn1">#ff794220</color>
+    <color name="grayn2">#ffECECEC</color>
+    <color name="grayn3">#ffEFEFEF</color>
+    <color name="yellown1">#ffEF9B4E</color>
+    <color name="greenn1">#ff4D52A0</color>
+    <color name="yellown2">#ffFFF096</color>
+    <color name="bluen1">#ffBAD3B1</color>
+    <color name="bluen2">#ff5EB589</color>
+
+    <!-- 延时 -->
+    <color name="yellown3">#ffF39700</color>
+    <color name="greenn2">#ff009074</color>
+    <color name="greenn3">#ff139753</color>
+    <color name="bluen3">#ff7F8725</color>
+    <color name="bluen4">#ff87B540</color>
+    <color name="grayn4">#ff71412B</color>
+
+    <!-- details1 -->
+    <color name="details1_1">#ffE0B9A9</color>
+    <color name="details1_2">#ffE60012</color>
+    <color name="details1_3">#ffDEB465</color>
+
+</resources>

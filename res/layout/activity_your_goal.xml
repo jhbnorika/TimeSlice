@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grayn3" >
+
+    <RelativeLayout
+        android:id="@+id/your_goal_head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ff333333"
+        tools:context=".YourGoalActivity" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_base1"
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:text="@string/threemonth"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/party_create"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_base1"
+            android:clickable="true"
+            android:contentDescription="@string/settings"
+            android:gravity="center_vertical"
+            android:onClick="onClick$iv_settings"
+            android:padding="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_settings" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_goal_head"
+        android:layout_margin="1dip"
+        android:background="@drawable/background_content1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/your_three_month_goal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_content_v1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/i_do_three_month"
+                android:lines="2"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grayn2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/your_month_goal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_content_v2"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/i_do_one_month"
+                android:lines="2"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/your_week_goal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_content_v3"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/i_do_one_week"
+                android:lines="2"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/your_day_goal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_content_v4"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/i_do_one_day"
+                android:lines="3"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/your_not_need"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_content_v5"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/i_not_need"
+                android:lines="2"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/your_need"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_content_v6"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/i_need"
+                android:lines="2"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/your_goal_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ff333333" >
+
+        <TextView
+            android:id="@+id/your_delaytime_days"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/background_base1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick$tv_delay_time"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/delay_time_default_days"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/your_goal_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_base1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/deadline"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

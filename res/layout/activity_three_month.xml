@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/three_thinking_head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ff333333" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_base1"
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:text="@string/threethinking"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/three_thinking_tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip"
+        android:background="#ff2D362D"
+        android:gravity="center_vertical"
+        android:hint="@string/thinking1"
+        android:lines="3"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grayn2"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/three_thinking_tv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="0.5dip"
+        android:background="#ffE60012"
+        android:gravity="center_vertical"
+        android:hint="@string/thinking2"
+        android:lines="3"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grayn2"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/three_thinking_tv3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="0.5dip"
+        android:background="#ff794220"
+        android:gravity="center_vertical"
+        android:hint="@string/thinking3"
+        android:lines="3"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grayn2"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/three_thinking_tv4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="0.5dip"
+        android:background="#ff401F0C"
+        android:gravity="center_vertical"
+        android:hint="@string/thinking4"
+        android:lines="3"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grayn2"
+        android:textSize="22sp" />
+
+</LinearLayout>
