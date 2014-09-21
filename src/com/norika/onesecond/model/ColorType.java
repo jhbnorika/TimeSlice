@@ -20,7 +20,7 @@ public class ColorType {
 		REDS[2] = mContext.getResources().getColor(R.color.details1_3);
 	}
 
-	public static int[] getColors(TASK_TYPE taskType) {
+	public static int[] getColors(TaskType taskType) {
 		switch (taskType) {
 		case THREE_MONTH:
 			return REDS;

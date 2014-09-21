@@ -2,7 +2,7 @@ package com.norika.onesecond.ui;
 
 import com.norika.onesecond.R;
 import com.norika.onesecond.model.ColorType;
-import com.norika.onesecond.model.TASK_TYPE;
+import com.norika.onesecond.model.TaskType;
 import com.norika.onesecond.utils.CommonUtils;
 import android.os.Bundle;
 import android.app.Activity;
@@ -112,22 +112,22 @@ public class YourGoalActivity extends Activity implements OnClickListener {
 			}
 			break;
 		case R.id.your_three_month_goal:
-			intoActivity(TASK_TYPE.THREE_MONTH);
+			intoActivity(TaskType.THREE_MONTH);
 			break;
 		case R.id.your_month_goal:
-			intoActivity(TASK_TYPE.ONE_MONTH);
+			intoActivity(TaskType.ONE_MONTH);
 			break;
 		case R.id.your_week_goal:
-			intoActivity(TASK_TYPE.ONE_WEEK);
+			intoActivity(TaskType.ONE_WEEK);
 			break;
 		case R.id.your_day_goal:
-			intoActivity(TASK_TYPE.ONE_DAY);
+			intoActivity(TaskType.ONE_DAY);
 			break;
 		case R.id.your_not_need:
-			intoActivity(TASK_TYPE.NOT_DO);
+			intoActivity(TaskType.NOT_DO);
 			break;
 		case R.id.your_need:
-			intoActivity(TASK_TYPE.I_NEED);
+			intoActivity(TaskType.I_NEED);
 			break;
 		default:
 			break;
@@ -140,7 +140,7 @@ public class YourGoalActivity extends Activity implements OnClickListener {
 		this.finish();
 	}
 
-	private void intoActivity(TASK_TYPE taskType) {
+	private void intoActivity(TaskType taskType) {
 		if (taskType == null)
 			return;
 

@@ -2,14 +2,14 @@ package com.norika.onesecond.ui;
 
 import com.norika.onesecond.R;
 import com.norika.onesecond.model.ColorType;
-import com.norika.onesecond.model.TASK_TYPE;
+import com.norika.onesecond.model.TaskType;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 public class TaskDetailsActivity extends Activity {
 	private TextView tv_title;
-	private TASK_TYPE taskType;
+	private TaskType taskType;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class TaskDetailsActivity extends Activity {
 	private void initViews() {
 		tv_title = (TextView) findViewById(R.id.task_details_tv_details);
 
-		taskType = (TASK_TYPE) getIntent().getSerializableExtra(ColorType.TYPE);
+		taskType = (TaskType) getIntent().getSerializableExtra(ColorType.TYPE);
 		int[] colors = ColorType.getColors(taskType);
 		if (colors == null || colors.length != 3)
 			return;
