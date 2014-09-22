@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-    android:initialLayout="@layout/view_widget_timeslice"
+    android:initialLayout="@layout/view_widget_play"
     android:minHeight="146dp"
     android:minWidth="146dp"
     android:previewImage="@drawable/apple"
