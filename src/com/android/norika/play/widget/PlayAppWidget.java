@@ -25,7 +25,7 @@ public class PlayAppWidget extends AppWidgetProvider {
             // PlayAppWidget.class);
             views.setTextViewText(R.id.widget_tv, "Play ...");
             views.setImageViewResource(R.id.widget_iv, R.drawable.beauty);
-            views.setTextViewText(R.id.widget_bt, "Kick --->");
+            views.setTextViewText(R.id.widget_bt, "Kick");
             appManager.updateAppWidget(appWidgetId, views);
         }
     }
