@@ -1,20 +1,21 @@
-package com.norika.onesecond.ui;
+package com.android.norika.play.ui;
 
-import com.norika.onesecond.R;
-import com.norika.onesecond.model.ColorType;
-import com.norika.onesecond.model.TaskType;
-import com.norika.onesecond.utils.CommonUtils;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.norika.play.R;
+import com.android.norika.play.model.ColorType;
+import com.android.norika.play.model.TaskType;
+import com.android.norika.play.utils.CommonUtils;
 
 public class YourGoalActivity extends Activity implements OnClickListener {
 	private TextView tvs[] = new TextView[6];

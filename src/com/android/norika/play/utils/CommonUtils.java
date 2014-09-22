@@ -1,4 +1,4 @@
-package com.norika.onesecond.utils;
+package com.android.norika.play.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

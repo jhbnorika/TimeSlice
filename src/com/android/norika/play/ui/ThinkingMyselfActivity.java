@@ -1,9 +1,10 @@
-package com.norika.onesecond.ui;
+package com.android.norika.play.ui;
 
-import com.norika.onesecond.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.android.norika.play.R;
 
 public class ThinkingMyselfActivity extends Activity {
 	private TextView[] tvs = new TextView[4];

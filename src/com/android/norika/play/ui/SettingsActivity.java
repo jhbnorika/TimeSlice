@@ -1,4 +1,4 @@
-package com.norika.onesecond.ui;
+package com.android.norika.play.ui;
 
 import android.app.Activity;
 

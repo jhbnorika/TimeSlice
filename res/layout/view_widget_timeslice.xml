@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:background="#A0EFEFEF"
+    android:orientation="vertical"
+    android:padding="6dp" >
 
     <TextView
         android:id="@+id/widget_tv"
@@ -16,8 +18,20 @@
     <ImageView
         android:id="@+id/widget_iv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="74dp"
         android:contentDescription="Widget图片"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:src="@drawable/panda" />
+
+    <Button
+        android:id="@+id/widget_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/black"
+        android:padding="6dp"
+        android:text="Fresh"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>

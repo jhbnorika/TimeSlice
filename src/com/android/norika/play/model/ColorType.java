@@ -1,7 +1,8 @@
-package com.norika.onesecond.model;
+package com.android.norika.play.model;
 
-import com.norika.onesecond.R;
 import android.content.Context;
+
+import com.android.norika.play.R;
 
 public class ColorType {
 	private static Context mContext;

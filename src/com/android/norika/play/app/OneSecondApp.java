@@ -1,6 +1,6 @@
-package com.norika.onesecond.app;
+package com.android.norika.play.app;
 
-import com.norika.onesecond.model.ColorType;
+import com.android.norika.play.model.ColorType;
 
 import android.app.Application;
 

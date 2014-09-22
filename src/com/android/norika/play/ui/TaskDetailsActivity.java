@@ -1,11 +1,12 @@
-package com.norika.onesecond.ui;
+package com.android.norika.play.ui;
 
-import com.norika.onesecond.R;
-import com.norika.onesecond.model.ColorType;
-import com.norika.onesecond.model.TaskType;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.android.norika.play.R;
+import com.android.norika.play.model.ColorType;
+import com.android.norika.play.model.TaskType;
 
 public class TaskDetailsActivity extends Activity {
 	private TextView tv_title;

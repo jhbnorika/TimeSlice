@@ -1,4 +1,4 @@
-package com.norika.onesecond.model;
+package com.android.norika.play.model;
 
 public enum TaskType {
 
