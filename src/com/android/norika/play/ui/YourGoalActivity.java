@@ -46,6 +46,8 @@ public class YourGoalActivity extends Activity implements OnClickListener {
 		tvs[4].setOnClickListener(this);
 		tvs[5].setOnClickListener(this);
 
+        getSharedPreferences("test", Context.MODE_PRIVATE).edit().putBoolean("test", true).commit();
+
 		freshData();
 	}
 

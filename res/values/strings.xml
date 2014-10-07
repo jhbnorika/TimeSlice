@@ -24,5 +24,8 @@
     <string name="thinking3">思考三</string>
     <string name="thinking4">思考四</string>
     <string name="taskdetails">任务详情</string>
+    
+    <!-- Common & International-->
+    <string name="user_shared_label">Play</string>
 
 </resources>

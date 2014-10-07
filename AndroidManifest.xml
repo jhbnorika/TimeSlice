@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.norika.play"
+    android:installLocation="internalOnly"
+    android:sharedUserId="i.norika.rainplay"
+    android:sharedUserLabel="@string/user_shared_label"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -7,14 +10,49 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
+    <uses-configuration
+        android:reqFiveWayNav="false"
+        android:reqHardKeyboard="false"
+        android:reqKeyboardType="nokeys"
+        android:reqNavigation="nonav"
+        android:reqTouchScreen="finger" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:glEsVersion="0x00010001"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:glEsVersion="0x00010001"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="false"
+        android:allowClearUserData="false"
+        android:backupAgent="android.app.backup.BackupAgentHelper"
         android:icon="@drawable/apple"
         android:label="@string/app_name"
+        android:testOnly="false"
+        android:allowTaskReparenting="false"
+        android:manageSpaceActivity=".ui.ManageSpaceActivity"
+        android:process="i.norika.rainplay"
         android:theme="@style/AppTheme" >
+
+        <!-- android:debuggable="true" -->
         <activity
             android:name=".ui.YourGoalActivity"
             android:launchMode="singleTask"
+            android:alwaysRetainTaskState="false"
+            android:clearTaskOnLaunch="false"
+            android:finishOnTaskLaunch="false"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +75,10 @@
         <activity
             android:name=".ui.TaskDetailsActivity"
             android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ManageSpaceActivity"
+            android:launchMode="singleTop"
             android:screenOrientation="portrait" />
 
         <receiver
