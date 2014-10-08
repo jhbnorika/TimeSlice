@@ -33,26 +33,34 @@
         android:resizeable="true"
         android:smallScreens="false"
         android:xlargeScreens="true" />
-
+    
+        <!-- android:permission="com.android.norika.app.permission.ENTRY" -->
     <application
+        android:name="com.android.norika.play.app.LovePlayApp"
         android:allowBackup="false"
         android:allowClearUserData="false"
-        android:backupAgent="android.app.backup.BackupAgentHelper"
-        android:icon="@drawable/apple"
-        android:label="@string/app_name"
-        android:testOnly="false"
         android:allowTaskReparenting="false"
+        android:backupAgent="android.app.backup.BackupAgentHelper"
+        android:description="@string/play_des"
+         android:enabled="true"
+        android:hasCode="false"
+        android:largeHeap="true"
+        android:icon="@drawable/apple"
+        android:killAfterRestore="true"
+        android:persistent="false"
+        android:label="@string/app_name"
         android:manageSpaceActivity=".ui.ManageSpaceActivity"
-        android:process="i.norika.rainplay"
+        android:process="i.norika.loveplay"
+        android:testOnly="false"
         android:theme="@style/AppTheme" >
 
         <!-- android:debuggable="true" -->
         <activity
             android:name=".ui.YourGoalActivity"
-            android:launchMode="singleTask"
             android:alwaysRetainTaskState="false"
             android:clearTaskOnLaunch="false"
             android:finishOnTaskLaunch="false"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
