@@ -8,7 +8,10 @@
 
     <permission
         android:name="com.android.norika.app.permission.ENTRY"
-        android:description="@string/permission_access" />
+        android:description="@string/permission_access_des"
+        android:label="@string/permission_access"
+        android:permissionGroup="android.permission-group.PERSONAL_INFO"
+        android:protectionLevel="normal" />
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -71,6 +74,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity-alias
+            android:name="YourGoalActivityAlias"
+            android:icon="@drawable/s"
+            android:label="@string/app_sub_name"
+            android:targetActivity=".ui.YourGoalActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
         <activity
             android:name=".ui.DelayTimeActivity"
             android:launchMode="singleTask"
