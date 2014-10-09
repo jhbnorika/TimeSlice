@@ -35,8 +35,8 @@
         android:xlargeScreens="true" />
     
         <!-- android:permission="com.android.norika.app.permission.ENTRY" -->
+       <!--  android:name="com.android.norika.play.app.LovePlayApp" -->
     <application
-        android:name="com.android.norika.play.app.LovePlayApp"
         android:allowBackup="false"
         android:allowClearUserData="false"
         android:allowTaskReparenting="false"
