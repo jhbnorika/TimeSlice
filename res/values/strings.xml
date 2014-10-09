@@ -28,5 +28,6 @@
     <!-- Common & International-->
     <string name="user_shared_label">Play</string>
     <string name="play_des">玩，是一个人的天性，每个年龄每个人都爱玩，无论外出行走，新鲜的出游，闲情逸致的逛逛......引导你选择最适合自己的方式玩的丰富多彩。</string>
-
+	<string name="permission_access">access the app</string>
+    
 </resources>
