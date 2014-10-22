@@ -48,7 +48,7 @@ public class YourGoalActivity extends Activity implements OnClickListener {
 
         String className = getIntent().getComponent().getClassName();
         System.out.println(className);
-        
+
 		freshData();
 	}
 
@@ -79,6 +79,8 @@ public class YourGoalActivity extends Activity implements OnClickListener {
 		tvs[3].setText("冥想20分[5次/分]，乔布斯，英语，阅读，早餐，OOM，UML，.9.png\nViewPage，ExpandedListView");
 		tvs[4].setText("少用搜索引擎、远离微知识、睡7小时\n无用网页，补充糖分[不是食用甜食]");
 		tvs[5].setText("12月衣服、亚马逊书籍\n1月元旦手机、空调");
+
+        // tvs[5].setText(Html.fromHtml(getResources().getString(R.string.stop_msg)));
 
 		dataChangedReceiver = new BroadcastReceiver() {
 			@Override

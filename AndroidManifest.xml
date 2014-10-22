@@ -41,12 +41,14 @@
         android:smallScreens="false"
         android:xlargeScreens="true" />
 
+    <!-- <instrumentation android:functionalTest="false"></instrumentation> -->
+
     <application
         android:name="com.android.norika.play.app.LovePlayApp"
         android:allowBackup="false"
         android:allowClearUserData="false"
         android:allowTaskReparenting="false"
-        android:backupAgent="android.app.backup.BackupAgentHelper"
+        android:backupAgent="com.android.norika.play.backup.PlayBackupAgentHelper"
         android:description="@string/play_des"
         android:enabled="true"
         android:hasCode="true"
@@ -56,18 +58,31 @@
         android:largeHeap="true"
         android:manageSpaceActivity=".ui.ManageSpaceActivity"
         android:persistent="false"
-        android:process="i.norika.loveplay"
+        android:process=":play"
+        android:restoreAnyVersion="false"
+        android:taskAffinity="com.android.norika.play.self"
         android:testOnly="false"
         android:theme="@style/AppTheme" >
+
+        <!-- 备份恢复KEY，获取地址 http://code.google.com/android/backup/signup.html -->
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIDaYEVgU6DJnyJdBmU7KLH3kszDXLv_4DIsEIyQ" />
 
         <!-- android:debuggable="true" -->
         <activity
             android:name=".ui.YourGoalActivity"
             android:alwaysRetainTaskState="false"
             android:clearTaskOnLaunch="false"
+            android:configChanges="orientation|navigation|locale|keyboardHidden"
+            android:excludeFromRecents="false"
             android:finishOnTaskLaunch="false"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
+            android:multiprocess="false"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
